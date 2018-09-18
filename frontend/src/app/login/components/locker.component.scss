@@ -1,0 +1,8 @@
+a {
+  color: #888;
+  cursor: pointer;
+  &.active {
+    cursor: default;
+    color: #222;
+  }
+}

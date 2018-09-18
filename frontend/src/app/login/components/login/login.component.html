@@ -1,0 +1,5 @@
+<form [formGroup]="form">
+  <app-email-field class='field' placeholder="email" formControlName="email"></app-email-field>
+  <app-password-field class='field' passwordStrenght="low" placeholder="senha" formControlName="password"></app-password-field>
+  <app-save-button [translations]="translations_button" (clicked)="save()"></app-save-button>
+</form>

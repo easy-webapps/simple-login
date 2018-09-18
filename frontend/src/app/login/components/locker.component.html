@@ -1,0 +1,12 @@
+<div class='locker'>
+  <div class='type'>
+    <a class='login' [ngClass]="{'active': page==='login'}" (click)="setPage('login')">Login</a>
+    <a class='signup' [ngClass]="{'active': page==='signup'}" (click)="setPage('signup')">Signup</a>
+  </div>
+
+  <div class='container'>
+    <app-login *ngIf="page==='login'" [loginService]="loginService"></app-login>
+    <app-signup *ngIf="page==='signup'" [signupService]="signupService"></app-signup>
+    <app-recovery *ngIf="page==='recovery'" [recoveryService]="recoveryService"></app-recovery>
+  </div>
+</div>
